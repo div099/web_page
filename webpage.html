@@ -27,7 +27,7 @@
     let one = document.getElementById("firstInput").value;
     let two = document.getElementById("secondInput").value;
 
-    sum = (Math.floor(one)) + (Math.floor(two));
+    sum = (parseFloat(one)) + (parseFloat(two));
     console.log(sum);
     document.getElementById("printSum").innerHTML = sum;
   }
