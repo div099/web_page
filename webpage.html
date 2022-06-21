@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title> Step 5: Webpage </title>
+  <h1>Step 5: Webpage</h1>
+  <br>
+</head>
+
+<body>
+  <h2>First Input:</h2>
+  <input id="firstInput" placeholder="Enter First Input"><br><br>
+  <h2>Second Input:</h2>
+  <input id="secondInput" placeholder="Enter Second input"><br><br>
+</body>
+
+<button onclick="addFunction()" style="size:20px";>Add</button><br><br>
+
+<div>
+  <h2>Sum:</h2>
+  <h4 id="printSum" style="font-size:35px";></h4>
+</div>
+
+<script>
+  function addFunction() {
+
+    let one = document.getElementById("firstInput").value;
+    let two = document.getElementById("secondInput").value;
+
+    sum = (Math.floor(one)) + (Math.floor(two));
+    console.log(sum);
+    document.getElementById("printSum").innerHTML = sum;
+  }
+
+</script>
+
+</html>
